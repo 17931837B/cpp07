@@ -35,8 +35,6 @@ void test4(std::string &s)
 	std::cout << s << std::endl;
 }
 
-
-
 int main(void)
 {
 	int	test_int[3] = {1, 2, 3};
