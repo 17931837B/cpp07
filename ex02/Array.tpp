@@ -33,6 +33,7 @@ Array<T>::Array(Array const &copy): size_(copy.size_)
 template <typename T>
 Array<T>& Array<T>::operator=(Array const &src)
 {
+	std::cout << "copy assignment" << std::endl;
 	unsigned int	i = 0;
 
 	if (this != &src)
@@ -68,5 +69,5 @@ const T& Array<T>::operator[](unsigned int index) const
 template <typename T>
 unsigned int Array<T>::size() const
 {
-	return size_;
+	return (size_);
 }

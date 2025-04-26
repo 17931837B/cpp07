@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Array.hpp"
 
-#define MAX_VAL 750
+#define MAX_VAL 0
 int main(int, char**)
 {
     Array<int> numbers(MAX_VAL);
@@ -49,5 +49,10 @@ int main(int, char**)
         numbers[i] = rand();
     }
     delete [] mirror;//
+    {
+        Array<int> a;
+        Array<int> b;
+        b = a;
+    }
     return 0;
 }
